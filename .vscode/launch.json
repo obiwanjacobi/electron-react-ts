@@ -1,0 +1,40 @@
+{
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    // NOTE: remove '.cmd' for non-Windows platforms.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Program",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/Program.js",
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false,
+            "preLaunchTask": null,
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd",
+            "runtimeArgs": [
+                "--enable-logging"
+            ]
+        }, {
+            "name": "Application",
+            "type": "chrome",
+            "request": "launch",
+            //"program": "${workspaceFolder}/Application.js",
+            //"stopOnEntry": false,
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": null,
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd",
+            "runtimeArgs": [
+                "${workspaceFolder}",
+                "--enable-logging",
+                "--remote-debugging-port=9222"
+            ]
+        }, {
+            // run in terminal: ./node_modules/.bin/electron.cmd . --enable-logging --remote-debugging-port=9222
+            "name": "Attach",
+            "type": "chrome",
+            "request": "attach",
+            "port": 9222
+        }
+    ]
+}
