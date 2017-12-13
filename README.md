@@ -1,18 +1,19 @@
-# electron-quick-start
+# electron-react-ts
 
-**Clone and run for a quick way to see Electron in action.**
+This example is based on the Electron application quick start tutorial [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start).
 
-This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
+The project contains these files:
 
-**Use this app along with the [Electron API Demos](http://electron.atom.io/#get-started) app for API code examples to help you get started.**
+- `package.json` - Points to the app's entry point and lists its details and dependencies.
+- `tsconfig.json` - Configurures the TypeScript compiler.
+- `Program.ts` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
+- `index.html` - The main (web) page to render. This is the app's **renderer process**.
+- `Application.tsx` - The React <Application> component that is attached to `index.html`.
 
-A basic Electron application needs just these files:
+Visual Studio Code
 
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
-
-You can learn more about each of these components within the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start).
+- `launch.json` - Contains launch and debug parameters for the F5 experience for both the main process (Program) as well as the render process (Application).
+- `tasks.json` - Contains the default compile/build task (Ctrl+Shift+B).
 
 ## To Use
 
@@ -20,26 +21,22 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/electron/electron-quick-start
+git clone https://github.com/obiwanjacobi/electron-react-ts
 # Go into the repository
-cd electron-quick-start
+cd electron-react-ts
 # Install dependencies
 npm install
 # Run the app
 npm start
 ```
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+## Conventions
 
-## Resources for Learning Electron
-
-- [electron.atom.io/docs](http://electron.atom.io/docs) - all of Electron's documentation
-- [electron.atom.io/community/#boilerplates](http://electron.atom.io/community/#boilerplates) - sample starter apps created by the community
-- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
-- [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
-- [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
-- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
+- Names starting with an upper case Letter are types.
+- Names starting with a lower case letter are vars or members.
 
 ## License
 
 [CC0 1.0 (Public Domain)](LICENSE.md)
+
+Created december 2017.

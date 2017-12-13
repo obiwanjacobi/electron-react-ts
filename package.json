@@ -1,21 +1,26 @@
 {
-  "name": "electron-quick-start",
+  "name": "electron-react-ts",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "src/Program.js",
+  "description": "A minimal Electron + React application in TypeScript",
+  "main": "Program.js",
   "scripts": {
-    "start": "electron .",
-    "tsc": "tsc"
+    "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/obiwanjacobi/electron-react-ts",
   "keywords": [
     "Electron",
+    "React",
+    "TypeScript",
     "quick",
     "start",
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
+  "author": {
+     "name": "Marc Jacobi", 
+     "email": "obiwanjacobi@hotmail.com", 
+     "url": "https://github.com/obiwanjacobi"
+  },
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "~1.7.8",

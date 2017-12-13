@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as ReactDom from 'react-dom'
 
-// TODO:
+// TODO: Define your Application properties.
 interface Props { }
 
 /**
