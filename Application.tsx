@@ -1,5 +1,5 @@
-import * as React from 'react'
-import * as ReactDom from 'react-dom'
+import * as React from "react";
+import * as ReactDom from "react-dom";
 
 // TODO: Define your Application properties.
 interface Props { }
@@ -9,7 +9,16 @@ interface Props { }
  */
 export default class Application extends React.Component<Props, {}> {
     render() {
-        return <h1>Electron + React sample app in TypeScript.</h1>;
+        return  (<div className="App">
+                    <div className="App-header">
+                        <img src="./logo.svg" className="App-logo" alt="logo" />
+                        <h2>Electron + React sample application in TypeScript.</h2>
+                    </div>
+                    <p className="App-intro">
+                        This code is located in the <code>src/Application.tsx</code> file.
+                    </p>
+                </div>
+            );
     }
 
     /**

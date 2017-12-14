@@ -1,7 +1,8 @@
 {
   "name": "electron-react-ts",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A minimal Electron + React application in TypeScript",
+  "private": true,
   "main": "Program.js",
   "scripts": {
     "start": "electron ."
@@ -17,9 +18,9 @@
     "demo"
   ],
   "author": {
-     "name": "Marc Jacobi", 
-     "email": "obiwanjacobi@hotmail.com", 
-     "url": "https://github.com/obiwanjacobi"
+    "name": "Marc Jacobi",
+    "email": "obiwanjacobi@hotmail.com",
+    "url": "https://github.com/obiwanjacobi"
   },
   "license": "CC0-1.0",
   "devDependencies": {
