@@ -2,13 +2,14 @@
 
 This example is based on the Electron application quick start tutorial [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start).
 
-The project contains these files:
+The project contains these files (among others):
 
 - `package.json` - Points to the app's entry point and lists its details and dependencies.
 - `tsconfig.json` - Configurures the TypeScript compiler.
 - `Program.ts` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
 - `index.html` - The main (web) page to render. This is the app's **renderer process**.
 - `Application.tsx` - The React <Application> component that is attached to `index.html`.
+- `Application.css` - Styles loaded into `index.html`.
 
 Visual Studio Code
 
